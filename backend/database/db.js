@@ -7,10 +7,11 @@
 
 // module.exports = sequelize;
 
-const {sequelize} =require ("sequelize")
-const sequelize = new Sequelize ("cadastro_tarefas", "aluno", "senha123", {
+const {Sequelize} =require("sequelize")
+const sequelize = new Sequelize ("cadastro_tarefas", "tarefas_user", "123456", {
   host: "localhost",
-  dialect: "mysql"
+  dialect: "mysql",
+  timestamp: false
 });
 
 module.exports = sequelize;

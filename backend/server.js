@@ -27,7 +27,7 @@ app.use (express.json());
 
 //ROTA
 
-app.use("/tarefas", tarefaRoutes);
+app.use("/", tarefaRoutes);
 
 //SINCRONIZAÇÃO COM O BANCO - INICIAR DO SERVIDOR
 
